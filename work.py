@@ -1,15 +1,15 @@
 tickets = int(input("Введите количество билетов: "))
 summ = 0
-prise = " "
+price = " "
 for i in range(1, tickets + 1):
     age = int(input("Введите возраст посетителя: "))
     if age < 18:
-        prise = 0
+        price = 0
     elif 18 <= age < 25:
-        prise = 990
+        price = 990
     else:
-        prise = 1390
-    summ += prise
+        price = 1390
+    summ += price
 if tickets > 3:
     discount = summ / 10
     summ = summ - discount
